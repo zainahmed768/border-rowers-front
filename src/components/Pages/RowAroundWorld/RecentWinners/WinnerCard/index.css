@@ -1,0 +1,89 @@
+.winner__card {
+  position: relative;
+  background: var(--primary-color);
+  border-radius: 22px;
+  text-align: center;
+  padding: 1rem;
+  transition: 0.3s ease;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.winner__img {
+  position: relative;
+  margin-top: -70px;
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.winner__img .ant-tag {
+  position: absolute;
+  bottom: 3px;
+  right: -24px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-family: var(--syne-font) !important;
+  font-size: 15px;
+  color: var(--primary-color);
+  font-weight: 800;
+  border: 2px solid var(--primary-color);
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.winner__card h4 {
+  color: var(--white);
+  margin: 8px 0 0;
+  font-weight: 700;
+}
+
+.winner__card h3 {
+  color: var(--secondary-color);
+  margin: 0 !important;
+  font-weight: 800;
+  font-size: 22px;
+  font-family: var(--score-font) !important;
+}
+
+/* .winner__card-2 {
+  transform: scale(1.2) translateY(-10px);
+} */
+
+/* Hovers  */
+.winner__card:hover {
+  background: #f0f2f9;
+  transform: translateY(-5px);
+  border-color: var(--secondary-color);
+}
+
+.winner__card:hover h4 {
+  color: var(--primary-color);
+}
+/* Hovers  */
+
+
+
+@media (max-width: 991px) {
+  .winner__card-2 {
+    transform: scale(1) translateY(0px);
+  }
+  .winner__card {
+    margin: 2rem 0;
+  }
+  .winner__card h4 {
+    font-size: 16px !important;
+  }
+  .winner__card h3 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1024px) {
+  .winner__card h3 {
+    font-size: 20px;
+  }
+}

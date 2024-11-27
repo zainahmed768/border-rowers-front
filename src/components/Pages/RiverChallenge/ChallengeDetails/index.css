@@ -1,0 +1,50 @@
+.ChallengeDetails {
+  padding: 0 0 5rem;
+}
+
+.details__box:nth-child(even) .ant-card {
+  background: var(--primary-color);
+}
+
+.details__box:nth-child(even) .ant-card p,
+.details__box:nth-child(even) .ant-card h4 {
+  color: #fff !important;
+}
+
+.details__box:nth-child(odd) .ant-card {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.details__box .ant-card {
+  text-align: center;
+  border-radius: 16px;
+  margin: 10px 0;
+}
+.details__box .ant-card h4,
+.details__box .ant-card p {
+  margin: 0;
+}
+
+.details__box .ant-card h4 {
+  font-family: var(--poppins-font) !important;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.challenge__rewards {
+  margin-top: 40px;
+}
+
+.challenge__rewards .ChallengeTrophyCard img {
+  border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+  .ChallengeDetails {
+    padding: 0 0 2rem;
+  }
+  .challenge__rewards {
+    margin-top: 20px;
+  }
+}

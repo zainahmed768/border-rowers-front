@@ -1,0 +1,115 @@
+@import "../../../../../app/globals.css";
+
+.image__container {
+  position: relative;
+  margin: -50px auto 0;
+  width: 80px;
+  height: 80px;
+}
+
+.image__container .badge {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--syne-font);
+  font-weight: 800;
+  font-size: 18px;
+  background: var(--secondary-color);
+  color: #193a69;
+  transition: 0.4s ease;
+}
+
+.leaderboard-card .card__body h5 {
+  font-family: var(--syne-font);
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-top: 10px;
+  color: var(--primary-color);
+}
+
+.leaderboard-card .card__body h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: var(--syne-font);
+  color: var(--primary-color);
+}
+
+.leaderboard-card {
+  text-align: center;
+  border: 0;
+  transition: 0.3s ease;
+  border: 1px solid transparent;
+  cursor: pointer;
+  border-radius: 18px ;
+}
+
+.leaderBoarCards {
+  margin-top: 4em;
+}
+
+.leaderboards {
+  margin-top: 5em;
+}
+
+.leaderboard-card .ant-card-body {
+  padding: 10px 0 !important;
+  
+}
+
+/* Hovers  */
+
+.leaderboard-card:hover {
+  background-color: var(--primary-color) !important;
+  border: 1px solid var(--secondary-color);
+  transform: translateY(-10px);
+}
+
+.leaderboard-card:hover h5,
+.leaderboard-card:hover h4 {
+  color: var(--white);
+}
+
+.leaderboard-card:hover .badge {
+  bottom: calc(100% - 30px);
+  transform: rotate(360deg);
+  transition-delay: transform 0.1s ease;
+  border: 2px solid var(--secondary-color);
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+.leaderboard-card:hover .badge img {
+  filter: invert(1);
+}
+
+@media (max-width: 1300px) {
+  .leaderboard-card .ant-card-body {
+    padding: 14px;
+  }
+}
+@media (max-width: 1199px) {
+  .leaderboards {
+    margin-top: 2em;
+  }
+  .leaderboard-card .card__body h5 {
+    font-size: 16px;
+  }
+  .leaderboard-card .card__body h4 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 575px) {
+  .leaderboard-card {
+    margin: 1.8rem 0;
+  }
+}

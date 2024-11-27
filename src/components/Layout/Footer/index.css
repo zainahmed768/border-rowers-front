@@ -1,0 +1,139 @@
+@import "../../../app/globals.css";
+
+footer {
+  background: var(--primary-color);
+  position: relative;
+  padding: 17rem 0 2rem;
+  background: url(/footer-bg.png) no-repeat center/cover;
+}
+
+.foo__middle {
+  margin: 4rem 0 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #fff;
+}
+
+.foo__list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.foo__list a {
+  color: var(--white);
+  font-family: var(--poppins-font);
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.foo__list a:hover {
+  color: var(--secondary-color);
+}
+
+.foo__bottom p,
+.foo__bottom a {
+  color: #ffffff9c !important;
+  margin: 0;
+  font-family: var(--poppins-font);
+  font-size: 15px;
+}
+
+.foo__bottom .foo__list {
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.newsletter__form {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 6px;
+  font-family: var(--poppins-font);
+}
+
+.newsletter__form input {
+  border: 0;
+  outline: none;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+.newsletter__form input:focus {
+  box-shadow: 0 0 0 transparent !important;
+  border: 0 !important;
+}
+.newsletter__form button {
+  background: var(--primary-color);
+  border: 0;
+  outline: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.newsletter__form button:hover {
+  background-color: var(--secondary-color);
+}
+
+.newsletter__form button .ant-spin-dot-item {
+  background: #fff !important;
+}
+
+.newsletter__form input::placeholder {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+footer .ant-form-item {
+  margin: 0 !important;
+}
+
+@media (min-width: 1600px) {
+  footer {
+    background-size: 100% 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .foo__list a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 991px) {
+  footer {
+    padding: 19rem 0 2rem;
+    background-size: 100% 100%;
+  }
+  .foo__list {
+    justify-content: flex-start;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 767px) {
+  footer {
+    background: var(--primary-color);
+    margin-top: 2rem;
+    padding: 2rem 0 2rem;
+  }
+  .foo__list {
+    margin: 20px 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .foo__list a {
+    font-size: 14px;
+  }
+
+  .socials {
+    margin: 22px 0 0;
+    text-align: left;
+  }
+  .foo__bottom .foo__list {
+    justify-content: flex-start;
+  }
+  .foo__middle {
+    margin: 2rem 0 2rem;
+  }
+}

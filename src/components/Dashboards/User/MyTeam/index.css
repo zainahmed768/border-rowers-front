@@ -1,0 +1,31 @@
+.panel__tabs .ant-tabs-nav {
+  justify-content: flex-end;
+  margin-top: -80px;
+}
+
+.panel__tabs .ant-tabs-nav .ant-tabs-nav-wrap {
+  max-width: 50%;
+}
+
+.panel__tabs .ant-tabs-content-holder {
+  margin-top: 1.5rem;
+}
+
+.panel__tabs .ant-tabs-nav:before {
+  width: 50%;
+  right: 0 !important;
+  left: unset !important;
+}
+
+@media (max-width: 767px) {
+  .panel__tabs .ant-tabs-nav .ant-tabs-nav-wrap {
+    max-width: 100%;
+  }
+  .panel__tabs .ant-tabs-nav {
+    margin-top: 0;
+  }
+
+  .panel__tabs .ant-tabs-content-holder {
+    margin-top: 0.5rem;
+  }
+}

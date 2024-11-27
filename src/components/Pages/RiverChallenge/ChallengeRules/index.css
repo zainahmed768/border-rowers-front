@@ -1,0 +1,55 @@
+.ChallengeRules {
+  padding: 0 0 5rem;
+}
+.rules__list .app__para {
+  position: relative;
+  padding-left: 40px;
+}
+
+.rules__list .app__para:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: var(--secondary-color);
+  border-radius: 50%;
+}
+
+.rules__footer p,
+.rules__footer h4 {
+  margin: 0;
+  font-family: var(--poppins-font) !important;
+  color: var(--primary-color);
+}
+
+.rules__footer h4 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.rules__footer {
+  margin-top: 3rem;
+}
+
+@media (max-width: 767px) {
+  .ChallengeRules {
+    padding: 0 0 2rem;
+  }
+  .rules__footer {
+    margin-top: 1rem;
+  }
+  .rules__footer .ant-row {
+    margin: 20px 0 0;
+  }
+}
+@media (max-width: 375px) {
+  .rules__footer p,
+  .rules__footer h4 {
+    margin: 10px 0 0;
+  }
+  .rules__list .app__para {
+    padding-left: 30px;
+  }
+}

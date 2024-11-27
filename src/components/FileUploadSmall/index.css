@@ -1,0 +1,34 @@
+.form__file-upload .uploadButton h5 {
+  font-size: 14px;
+}
+
+.form__file-upload .ant-upload.ant-upload-select {
+  margin-top: 0 !important;
+  width: 41px !important;
+  height: 41px !important;
+  border: 0 !important;
+}
+
+.form__file-upload .ant-upload-list-item-container {
+  margin-top: 0 !important;
+}
+
+.form__file-upload .ant-upload-list {
+  text-align: left !important;
+}
+
+.form__file-upload .uploadButton {
+  transform: translateX(40px);
+}
+.form__file-upload .uploadButton img {
+  width: 41px !important;
+  height: 41px !important;
+}
+
+@media (max-width: 767px) {
+  .form__file-upload .uploadButton {
+    transform: translateX(37px);
+    flex-direction: row;
+    margin: 0;
+  }
+}

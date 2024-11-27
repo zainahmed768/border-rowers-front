@@ -1,0 +1,9 @@
+.whyChooseUs {
+  padding: 0 0 5rem;
+}
+
+@media (max-width: 767px) {
+  .whyChooseUs {
+    padding: 0 0 3rem;
+  }
+}

@@ -1,0 +1,12 @@
+.sub__title {
+  font-family: var(--syne-font);
+  font-size: 1.75em !important;
+  font-weight: 600 !important;
+  margin-top: .5rem !important;
+}
+
+@media(max-width:767px) {
+  .sub__title {
+    font-size: 1.2em !important;
+  }
+}

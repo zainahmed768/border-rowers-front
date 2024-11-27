@@ -1,0 +1,37 @@
+.inner__banner {
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("/inner-banner.png") no-repeat center/cover;
+  margin-top: -120px;
+  text-align: center;
+  flex-direction: column;
+}
+
+.inner__banner .ant-breadcrumb a {
+  color: #fff !important;
+}
+
+@media (min-width: 1600px) {
+  .inner__banner {
+    background-size: 100% 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .inner__banner {
+    height: 300px;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .inner__banner {
+    background: url(/inner-banner-sm.jpg) no-repeat center/cover;
+    margin-bottom: 1rem;
+  }
+  .inner__banner h2 {
+    margin-top: 3rem !important;
+  }
+}

@@ -1,0 +1,22 @@
+input, .ant-input-password, textarea {
+  border-color: #c6c6c6 !important;
+  font-family: var(--poppins-font) !important;
+  color: var(--primary-color) !important;
+  padding: 14px 10px !important;
+  font-weight: 500 !important;
+  background: transparent !important;
+}
+input:hover, .ant-input-password:hover, textarea:focus {
+  border-color: var(--primary-color) !important;
+}
+input:focus, .ant-input-password:focus, textarea:focus {
+  box-shadow: 0 0 5px #05214871 !important;
+}
+
+.ant-input-password {
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+.ant-input-suffix {
+  padding-right: 10px;
+}

@@ -1,0 +1,38 @@
+.ChallengeTrophyCard {
+  background: #fff;
+  border-radius: 20px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: 0.3s ease;
+  margin: 10px 0;
+}
+.ChallengeTrophyCard:hover {
+  background: var(--secondary-color);
+}
+
+.trophy__img {
+  min-width: 78px;
+  max-width: 78px;
+}
+
+.trophy__img img {
+  width: 100% !important;
+}
+
+.trophies__col img {
+  border-radius: 10px !important;
+}
+
+.ctrophy__info h4 {
+  margin: 0;
+  font-size: 20px;
+}
+
+@media (max-width: 575px) {
+  .ChallengeTrophyCard {
+   flex-direction: column;
+  }
+}
+ 

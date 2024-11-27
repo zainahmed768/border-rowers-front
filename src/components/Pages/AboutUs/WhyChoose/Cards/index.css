@@ -1,0 +1,30 @@
+@import "../../../../../app/globals.css";
+
+.choose__card {
+  max-width: 100% !important;
+}
+
+.choose__card .ant-card-body {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px !important;
+}
+
+.choose__card.about__card h4 {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  margin-top: 10px !important;
+  transition: 0.4s ease;
+}
+
+.choose__card .card__info {
+  flex: 2;
+}
+
+@media (max-width: 991px) {
+  .about__card {
+    max-width: 100%;
+    width: 100%;
+  }
+}

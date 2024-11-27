@@ -1,0 +1,27 @@
+.recovery__container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recovery__wrapp {
+  max-width: 528px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.recovery__wrapp .ant-form-item-explain-error{
+  text-align: left;
+}
+
+@media (max-width: 575px) {
+  .recovery__container {
+    height: auto;
+    padding: 3rem 0;
+  }
+  .recovery__wrapp {
+    max-width: 90%;
+  }
+}

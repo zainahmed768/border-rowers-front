@@ -1,0 +1,11 @@
+.famouseRowChallenge {
+    /* padding: 0 0 5rem; */
+    padding: 0 0 5rem;
+}
+
+@media (max-width: 767px) {
+    .famouseRowChallenge {
+        padding: 0 0 3rem;
+    }
+  }
+  

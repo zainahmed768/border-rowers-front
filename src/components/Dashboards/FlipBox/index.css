@@ -1,0 +1,81 @@
+.flip-card {
+  perspective: 1000px;
+  position: relative;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.flip-card-inner {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  max-width: 100%;
+  min-height: 220px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #d9d9d9;
+  color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-card-back {
+  background-color: #d9d9d9;
+  color: #000;
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  padding: 0.5rem;
+  border-radius: 20px;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-card .ant-upload-select {
+  border: 0 !important;
+  background-color: transparent !important;
+}
+
+.flip-card .ant-upload-list-item-container,
+.flip-card .ant-upload.ant-upload-select {
+  margin-top: 0 !important;
+}
+
+.flip-card .uploadButton {
+  /* display: flex; */
+  /* gap: 1rem;
+  justify-content: start;
+  align-items: center; */
+  transform: translateX(0);
+}
+
+.flip-card button {
+  margin-top: 10px  ;
+  border: 0;
+  outline: none;
+  color: var(--secondary-color);
+  font-family: var(--poppins-font);
+  background-color: transparent;
+  cursor: pointer;
+}

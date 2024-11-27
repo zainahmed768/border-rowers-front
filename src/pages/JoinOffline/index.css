@@ -1,0 +1,58 @@
+.JoinOffline {
+  padding: 5rem 0;
+}
+
+.joining__features p {
+  position: relative;
+  padding-left: 18px;
+}
+
+.joining__features p:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: var(--secondary-color);
+  border-radius: 50%;
+}
+
+.JoinOffline .ant-tooltip-content {
+  display: none;
+}
+
+.JoinOffline .ant-upload-select {
+  border: 0 !important;
+  background-color: transparent !important;
+}
+
+.uploadButton {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  transform: translateX(50px);
+}
+
+.uploadButton h5 {
+  font-size: 22px;
+}
+
+.JoinOffline .ant-upload-list {
+  margin: 1rem 0;
+}
+
+@media (max-width: 767px) {
+  .JoinOffline {
+    padding: 2rem 0;
+  }
+  .uploadButton {
+    transform: translateX(0px);
+    flex-direction: column;
+    margin-top: 24px;
+  }
+  .uploadButton h5 {
+    margin: 0;
+  }
+}

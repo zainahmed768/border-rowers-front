@@ -1,0 +1,6 @@
+{
+  "extends": "next/core-web-vitals"
+  // "extends": ["eslint:recommended", "next"],
+  // "es6": true,
+  // "no-unused-vars": ["warn", { "varsIgnorePattern": "VARIABLE_NAME"}]
+}

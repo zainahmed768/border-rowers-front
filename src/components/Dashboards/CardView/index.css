@@ -1,0 +1,25 @@
+.card__view {
+  background: #fff;
+  border-radius: 16px;
+  margin: 10px 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  transition: 0.3s ease;
+  /* cursor: pointer; */
+  cursor: pointer;
+}
+
+.card__view:hover {
+  background: var(--secondary-color);
+  transform: scale(1.02);
+}
+
+.card__view button {
+  outline: none;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}

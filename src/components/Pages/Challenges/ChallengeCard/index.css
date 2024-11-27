@@ -1,0 +1,123 @@
+.chllenge__cards-wrapp {
+  margin-top: 3rem;
+}
+.challenge__card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  transition: 0.3s ease;
+  margin: 10px 0;
+}
+.challenge__card:before {
+  z-index: 1;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0521484d;
+}
+.challenge-bg {
+  max-width: 527px;
+  height: 393px;
+  position: relative;
+  z-index: 0;
+}
+
+.challenge-bg img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  z-index: 0 !important;
+  transition: 0.3s ease;
+  /* filter: brightness(0.6); */
+}
+
+.chellenge-info {
+  position: absolute;
+  z-index: 99;
+  bottom: 0;
+  padding: 1rem;
+  color: #fff;
+  font-family: var(--poppins-font);
+  width: 92%;
+}
+
+.challenge__foo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.chellenge__price {
+  font-family: var(--poppins-font) !important;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.chellenge-info .labels .ant-tag {
+  font-family: var(--syne-font) !important;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 4px 12px;
+}
+
+.chellenge__by {
+  margin: 8px 0;
+  color: var(--secondary-color);
+  font-family: var(--syne-font);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.challenge__name {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.chellenge-info .date {
+  font-weight: 300;
+  margin: 0;
+  font-size: 14px;
+}
+.logo__thumb {
+  position: absolute;
+  z-index: 1;
+  right: 10px;
+  top: 18px;
+}
+
+/* Hovers  */
+.challenge__card:hover .challenge-bg img {
+  transform: scale(1.05);
+}
+.challenge__card:hover {
+  transform: translateY(-8px);
+}
+/* Hovers  */
+
+@media (max-width: 767px) {
+  .challenge__name {
+    font-size: 20px;
+  }
+  .chellenge__by {
+    font-size: 14px;
+  }
+  .chellenge__price {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .challenge__foo {
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+  .chellenge__price {
+    margin: 0;
+  }
+}

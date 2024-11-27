@@ -1,0 +1,37 @@
+.auth__content {
+  text-align: center;
+  max-width: 484px;
+  width: 100%;
+  padding: 0 0 0 9rem;
+  margin: auto;
+}
+
+.auth__side {
+  background: url("/auth-side.webp") no-repeat center/100% 100%;
+  /* height: 102vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+@media (max-width: 1366px) {
+  .auth__side {
+    background-size: 100% 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .auth__content {
+    padding: 0 0 0 5rem;
+  }
+}
+@media (max-width: 991px) {
+  .auth__content {
+    padding: 0;
+  }
+  .auth__side {
+    height: auto;
+    background: var(--primary-color);
+    padding: 4rem 0;
+  }
+}

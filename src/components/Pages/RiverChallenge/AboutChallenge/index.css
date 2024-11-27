@@ -1,0 +1,121 @@
+.AboutChallenge {
+  padding: 2rem 0 5rem;
+}
+.participant__img {
+  max-width: 173px;
+  height: 77px;
+  position: relative;
+}
+
+.participant__img img:not(:first-child) {
+  margin-left: -30px;
+  border: 2px solid #fff;
+}
+
+.river__challenge-map {
+  position: relative;
+  max-width: 485px;
+  /* max-height: 360px; */
+  /* overflow: hidden; */
+  border-radius: 16px;
+  margin: auto;
+}
+.river__challenge-map img {
+  position: relative !important;
+  object-fit: contain !important;
+  border-radius: 20px !important;
+  max-height: 360px !important;
+  max-width: 485px !important;
+}
+
+.description__title {
+  font-size: 25px;
+  color: var(--primary-color);
+  font-family: var(--poppins-font) !important;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.descripton__foo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.participants {
+  display: flex;
+}
+
+.participant__wrap {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.participant__img img {
+  position: relative !important;
+}
+
+.participant__info h4,
+.participant__info h5 {
+  font-family: var(--poppins-font) !important;
+  margin: 0 !important;
+  color: var(--primary-color);
+  text-transform: capitalize;
+}
+
+.participant__info h4 {
+  font-size: 27px;
+}
+.participant__info h5 {
+  font-size: 18px !important;
+  font-weight: 400;
+}
+
+.descripton__foo .level {
+  text-align: right;
+}
+
+.descripton__foo .level .ant-tag {
+  font-size: 14px;
+  font-family: var(--syne-font);
+  padding: 6px 21px;
+  border-radius: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.level p {
+  margin: 0 0 10px;
+}
+
+@media (max-width: 991px) {
+  .participant__wrap {
+    flex-direction: column;
+  }
+  .descripton__foo {
+    align-items: center;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 767px) {
+  .AboutChallenge {
+    padding: 2rem 0;
+  }
+  .participant__info h4 {
+    font-size: 18px;
+  }
+  .participant__info h5 {
+    font-size: 16px !important;
+  }
+}
+@media (max-width: 375px) {
+  .descripton__foo {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .description__title {
+    font-size: 20px;
+  }
+}

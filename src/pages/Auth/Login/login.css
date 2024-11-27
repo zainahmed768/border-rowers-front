@@ -1,0 +1,91 @@
+.auth__container {
+  max-width: 530px;
+  margin: auto auto 10px;
+  padding: 0 1rem 0;
+  /* height: 100vh; */
+  /* overflow: auto; */
+}
+.auth__container::-webkit-scrollbar {
+  width: 0;
+}
+.auth__head {
+  margin: 30px 0 15px;
+}
+
+.orWith {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.orWith hr {
+  flex: 2;
+}
+
+.orWith p {
+  flex: 1;
+  text-align: center;
+  font-family: var(--poppins-font);
+  color: #999ea1;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.auth__container .btns__group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.auth__container .btns__group button {
+  max-width: 100%;
+}
+
+.social__login {
+  border: 1px solid #cdd1e0 !important;
+  background: transparent;
+  outline: none;
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  flex: 1;
+  border-radius: 8px;
+  gap: 10px;
+  font-family: var(--poppins-font);
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+.social__login:hover {
+  background-color: var(--secondary-color);
+}
+
+.social__login span {
+  flex: 0 0 60%;
+}
+
+.social__login img {
+  flex: 0 0 20%;
+}
+
+.text__group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.captcha__field {
+  background-color: #f9f9f9;
+  border: 1px solid #d0d0d0;
+  margin-bottom: 17px;
+  padding: 10px;
+}
+
+@media (max-width: 767px) {
+  .social__login {
+    font-size: 14px;
+  }
+}

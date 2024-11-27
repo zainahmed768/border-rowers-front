@@ -1,0 +1,36 @@
+.rowing__challenges {
+  background: url("/home/showcase-bg.webp") no-repeat center/cover;
+  padding: 18rem 0 15rem;
+  /* padding: 3rem 0 7rem; */
+}
+
+.post__cards-wrapp {
+  margin: 6rem 0;
+}
+
+.community__wrapp {
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 1600px) {
+  .rowing__challenges {
+    background-size: 100% 100%;
+  }
+}
+@media (max-width: 991px) {
+  .rowing__challenges {
+    padding: 20rem 0 15rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .rowing__challenges {
+    padding: 2rem 0;
+    background-image: unset;
+    background-color: var(--primary-color);
+    margin-bottom: 2rem;
+  }
+  .community__wrapp {
+    margin-bottom: 1rem;
+  }
+}

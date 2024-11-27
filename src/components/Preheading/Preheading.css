@@ -1,0 +1,6 @@
+.pre__heading {
+  font-family: var(--syne-font);
+  margin: 0 ;
+  text-transform: uppercase;
+  font-weight: 400;
+}

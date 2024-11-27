@@ -1,0 +1,195 @@
+.add__btn {
+  border: 0;
+  outline: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--poppins-font);
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.remove__btn {
+  display: block;
+  margin-left: auto;
+  background: var(--primary-color);
+  border-radius: 50%;
+  height: 28px !important;
+  width: 28px !important;
+  line-height: 28px;
+  font-size: 22px;
+  border: 0;
+  outline: none;
+}
+.details__modal .remove__btn {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.tag {
+  font-family: var(--syne-font);
+  font-size: 17px;
+  padding: 4px 10px;
+  margin-left: 10px;
+  border-radius: 20px;
+  max-width: 80px;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Map Modal  */
+.map__modal-footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--primary-color);
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  box-sizing: border-box;
+  max-width: 75%;
+  justify-content: space-between;
+  margin: auto;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  flex-wrap: wrap;
+  z-index: 9;
+  box-shadow: -5px 0 15px #ffffff14;
+}
+
+.map__modal-footer li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.map__modal-footer button {
+  border: 0;
+  outline: none;
+  background: #f6cd3b;
+  padding: 1rem 0.5rem;
+  border-radius: 10px;
+  font-family: var(--syne-font);
+  font-size: 15px;
+  color: var(--third-color);
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.map__modal-footer p {
+  color: var(--white);
+  font-size: 15px !important;
+}
+
+.map__modal-footer button:hover {
+  background: #d1aa20;
+  color: var(--white);
+}
+
+.spacings__zero .ant-modal-content {
+  padding: 0;
+  border-radius: 23px;
+  overflow: hidden;
+  background: transparent !important;
+  box-shadow: 0 0 0 transparent !important;
+}
+
+.spacings__zero .ant-modal-close {
+  display: none;
+}
+
+/* Map Modal  */
+
+/* custom trophy modal */
+.details__modal .ant-modal-content {
+  border-radius: 28px;
+  background: #f0f2f9;
+  padding: 4rem 0;
+}
+
+.details__modal .ant-modal-content .ant-modal-close {
+  display: none;
+}
+
+.details__modal h2,
+.details__modal h4 {
+  text-align: center;
+}
+
+.details__modal .ant-modal-body {
+  max-width: 80%;
+  margin: auto;
+}
+.details__modal form {
+  margin: 3rem 0 0;
+}
+
+.details__modal .submit__btn, .edit__trophy__modal .submit__btn {
+  background: var(--secondary-color);
+  border: 0;
+  outline: none;
+  height: 45px;
+  border-radius: 10px;
+  width: 100%;
+  font-family: var(--syne-font);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--third-color);
+  cursor: pointer;
+}
+/* custom trophy modal  */
+
+button[role="menuitemradio"] {
+  background: var(--secondary-color) !important;
+  padding: 10px !important;
+}
+
+/* Joyride  */
+.__floater {
+  z-index: 99999 !important;
+}
+.__floater button {
+  font-family: var(--syne-font) !important;
+  outline: none !important;
+}
+.__floater button:first-child {
+  color: #fff !important;
+}
+.react-joyride__overlay {
+  z-index: 9999 !important;
+}
+.__floater button[data-test-id="button-primary"] {
+  background: var(--secondary-color) !important;
+  color: var(--primary-color) !important;
+}
+.react-joyride__tooltip {
+  background: var(--primary-color) !important;
+}
+.react-joyride__tooltip div {
+  padding: 0 !important;
+}
+.react-joyride__tooltip p {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+/* .__contains-map :where(.css-dev-only-do-not-override-i0ojgw).ant-modal {
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+} */
+/* Joyride  */
+
+@media (max-width: 767px) {
+  .edit__challenge-form .text-black {
+    text-align: left;
+  }
+}

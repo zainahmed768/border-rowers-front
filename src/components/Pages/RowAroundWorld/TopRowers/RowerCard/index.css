@@ -1,0 +1,111 @@
+.topRower__card {
+  background: #f0f2f9;
+  border-radius: 26px;
+  padding: 1rem;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  transition: 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.rower__info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.topRower__card .ant-tag {
+  position: absolute;
+  left: -26px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--syne-font);
+  font-weight: 800;
+  color: var(--primary-color);
+  font-size: 15px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 12px;
+}
+
+.rower__image img {
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  object-fit: contain !important;
+}
+
+.rower__data h4 {
+  font-size: 22px;
+  margin: 0;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.rower__data p {
+  font-family: var(--poppins-font);
+  margin: 0;
+  font-size: 16px;
+  color: var(--primary-color);
+}
+
+.rower__score h3 {
+  color: var(--primary-color);
+  margin: 0 !important;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: var(--score-font) !important;
+}
+
+/* Hovers  */
+.topRower__card:hover {
+  background-color: var(--primary-color);
+  border-color: var(--secondary-color);
+}
+
+.topRower__card:hover h3,
+.topRower__card:hover h4,
+.topRower__card:hover p {
+  color: var(--white) !important;
+}
+
+.topRower__card:hover .rower__image img {
+  border-color: var(--secondary-color);
+}
+/* Hovers  */
+
+@media (max-width: 768px) {
+  .rower__info {
+    margin-left: 2rem;
+  }
+  .topRower__card .ant-tag {
+    left: -13px;
+  }
+}
+@media (max-width: 575px) {
+  .topRower__card {
+    flex-direction: column;
+  }
+  .topRower__card .ant-tag {
+    left: -14px;
+  }
+  .rower__info {
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+  }
+  .rower__data h4 {
+    font-size: 18px;
+  }
+  .rower__data p {
+    font-size: 14px;
+  }
+  .rower__score h3 {
+    font-size: 16px;
+  }
+}

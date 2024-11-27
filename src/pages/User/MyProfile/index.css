@@ -1,0 +1,13 @@
+.pinfo__wrapp {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+@media (max-width: 767px) {
+  .pinfo__wrapp {
+    gap: 10px;
+    margin: 10px 0;
+  }
+}

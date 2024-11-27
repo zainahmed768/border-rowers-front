@@ -1,0 +1,176 @@
+.admin__wrapp .details__box p {
+  font-size: 13px !important;
+}
+
+.admin__wrapp .details__box h4 {
+  font-size: 14px !important;
+  font-weight: 700;
+}
+
+.admin__wrapp .details__box .ant-card-body {
+  padding: 20px 6px;
+}
+
+.admin__wrapp .details__box p {
+  font-size: 13px !important;
+}
+
+.admin__wrapp .details__box h4 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.admin__wrapp .details__box .ant-card-body {
+  padding: 20px 6px;
+}
+
+.admin__wrapp .participants h4 {
+  font-size: 1.4em;
+}
+
+.admin__wrapp .participants h5 {
+  font-size: 1em !important;
+}
+
+.participants {
+  display: flex;
+}
+
+.participant__wrap {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.participant__img img {
+  position: relative !important;
+}
+
+.participant__info h4,
+.participant__info h5 {
+  font-family: var(--poppins-font) !important;
+  margin: 0 !important;
+  color: var(--primary-color);
+  text-transform: capitalize;
+}
+
+.participant__info h4 {
+  font-size: 27px;
+}
+.participant__info h5 {
+  font-size: 18px !important;
+  font-weight: 400;
+}
+
+.rules p {
+  position: relative;
+  padding-left: 30px;
+}
+
+.rules p:before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0px;
+  width: 15px;
+  height: 15px;
+  background: var(--secondary-color);
+  border-radius: 50%;
+}
+
+.participant__img {
+  max-width: 173px;
+  height: 77px;
+  position: relative;
+}
+
+.river__challenge-map {
+  position: relative;
+  max-width: 605px;
+  max-height: 360px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+.river__challenge-map img {
+  position: relative !important;
+  object-fit: contain !important;
+}
+
+.tag__label {
+  border-radius: 30px;
+  padding: 4px 18px;
+  font-family: var(--syne-font);
+  color: var(--primary-color) !important;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.detail__tag .ant-tag {
+  width: 100%;
+  font-size: 14px;
+  font-family: var(--syne-font);
+  font-weight: 700;
+  text-align: center;
+  padding: 7px 0;
+}
+
+.challenge__progress .ant-progress-inner {
+  padding: 3px !important;
+  border: 1px solid #8d8585 !important;
+  border-radius: 13px !important;
+}
+.challenge__progress .ant-progress-bg {
+  border-radius: 10px !important;
+}
+
+.team-badge {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.team-badge .team-name h4 {
+  font-size: 15px !important;
+}
+
+.members {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--third-color) !important;
+}
+
+.members h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.members h5 {
+  font-family: var(--score-font) !important;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+@media (max-width: 991px) {
+  .members {
+    flex-direction: column;
+    align-items: center;
+  }
+  .participant__wrap {
+    flex-direction: column;
+  }
+}
+@media (max-width: 575px) {
+  .team-badge {
+    flex-direction: column;
+    justify-self: center;
+    gap: 0;
+  }
+}

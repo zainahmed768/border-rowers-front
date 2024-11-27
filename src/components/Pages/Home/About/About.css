@@ -1,0 +1,15 @@
+.section.about__sec {
+  padding: 5rem 0 4rem ;
+}
+
+.about__sec {
+  background: url("/home/flash.svg") no-repeat right top;
+  background-size: auto;
+}
+
+@media(max-width:767px) {
+  .section.about__sec {
+    padding: 0 0 3rem;
+    background: transparent ;
+  }
+}

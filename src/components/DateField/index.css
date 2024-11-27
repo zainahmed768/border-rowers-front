@@ -1,0 +1,12 @@
+.ant-picker {
+    width: 100%;
+    padding: 0 8px 0 4px !important;
+    border-color: #c6c6c6 !important;
+    background: transparent !important;
+    margin-bottom: 17px;
+}
+
+.ant-picker input:focus{
+    box-shadow: 0 0 0 transparent !important;
+    outline: none;
+}

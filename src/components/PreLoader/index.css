@@ -1,0 +1,11 @@
+@import '../../app/globals.css';
+
+.pre__loading {
+    width: 100vw;
+    height: 100vh;
+    background: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s ease;
+}

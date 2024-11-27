@@ -1,0 +1,45 @@
+.about__image-wrap {
+  max-width: 390px;
+  width: 100%;
+  position: relative;
+  margin: 10px 0;
+  transition: 0.3s ease;
+}
+.about__image-wrap img {
+  width: 100%;
+  height: 100%;
+  position: relative !important;
+}
+
+.wrap__one {
+  margin-bottom: 40px;
+}
+.wrap__two {
+  margin-top: 40px;
+}
+
+.howItStarted:hover .wrap__two {
+  margin-top: 0;
+}
+.howItStarted:hover .wrap__one {
+  margin-bottom: 0;
+}
+
+.howItStarted {
+  padding: 5rem 0;
+}
+
+@media (max-width: 767px) {
+  .howItStarted {
+    padding: 2rem 0;
+  }
+  .wrap__one {
+    margin-bottom: 0;
+  }
+  .wrap__two {
+    margin-top: 0;
+  }
+  .about__image-wrap {
+    margin: 0;
+  }
+}

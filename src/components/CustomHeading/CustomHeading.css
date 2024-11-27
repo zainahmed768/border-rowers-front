@@ -1,0 +1,5 @@
+.custom__heading {
+    font-family: var(--syne-font) !important;
+    margin-top: 0 !important;
+    text-transform: capitalize;
+}

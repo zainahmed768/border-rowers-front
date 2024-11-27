@@ -1,0 +1,62 @@
+.invite__wrapp {
+  background: #fff;
+  border-radius: 20px;
+  margin: 10px 0;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.friend__wrap {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.friend__info h4,
+.friend__info h5 {
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.friend__info h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.friend__info h5 {
+  font-size: 12px;
+  font-weight: 800;
+  font-family: var(--score-font) !important;
+}
+
+.invite__friend {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border: 0;
+  outline: none;
+  height: 45px;
+  font-family: var(--syne-font);
+  border-radius: 10px;
+  max-width: 116px;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.invite__friend:hover {
+  color: var(--white);
+  background: var(--primary-color);
+}
+
+@media (max-width: 575px) {
+  .invite__wrapp,
+  .friend__wrap {
+    flex-direction: column;
+    text-align: center;
+  }
+}

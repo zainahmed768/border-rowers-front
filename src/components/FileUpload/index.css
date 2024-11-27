@@ -1,0 +1,75 @@
+.file__upload .ant-tooltip-content {
+  display: none;
+}
+
+.file__upload .ant-upload-select {
+  border: 0 !important;
+  background-color: transparent !important;
+}
+
+.file__upload .ant-upload-list-item-container,
+.file__upload .ant-upload.ant-upload-select {
+  margin-top: 0 !important;
+}
+
+.uploadButton {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  transform: translateX(50px);
+}
+
+.uploadButton h5 {
+  font-size: 22px;
+}
+
+.file__upload .ant-upload-list {
+  margin: 1rem 0;
+}
+
+
+/* New  */
+.file__upload {
+  margin : 20px 0
+}
+.join__offline.file__upload label .uploadButton {
+  transform: translateX(0);
+}
+.preview__img {
+  width: 100px !important;
+  height: 100px;
+  object-fit: contain;
+  border: 1px solid var(--secondary-color);
+  border-radius: 6px;
+  padding: 4px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.__preview_img_wrapp {
+  position: relative;
+  max-width: max-content;
+}
+.__milestone_modal .__preview_img_wrapp {
+  margin: auto;
+}
+.__preview_img_wrapp > span {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .uploadButton {
+    transform: translateX(0px);
+    flex-direction: column;
+    margin-top: 24px;
+    gap: .3rem;
+    margin-bottom: 14px;
+  }
+  .uploadButton h5 {
+    margin: 0;
+  }
+}

@@ -1,0 +1,56 @@
+.edit__challenge-form {
+  margin-top: 1.5rem;
+}
+
+.edit__challenge-form label {
+  position: relative;
+}
+
+.map__pin {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+
+.w__label {
+  top: 80%;
+  transform: translateY(-80%);
+}
+
+.edit__challenge-form .submit__btn {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: var(--secondary-color);
+  font-family: var(--syne-font);
+  font-size: 16px;
+  font-weight: 700;
+  height: 55px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.edit__challenge-form .submit__btn:hover {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+.duration__wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.trophy__select {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.edit__challenge-form  .ant-picker-suffix {
+  color: var(--primary-color) !important;
+}

@@ -1,0 +1,15 @@
+.AboutRowAroundWorld {
+  padding: 5rem 0;
+}
+.AboutRowAroundWorld:hover .wrap__two {
+  margin-top: 0;
+}
+.AboutRowAroundWorld:hover .wrap__one {
+  margin-bottom: 0;
+}
+
+@media(max-width:767px) {
+  .AboutRowAroundWorld {
+    padding: 2rem 0;
+  }
+}

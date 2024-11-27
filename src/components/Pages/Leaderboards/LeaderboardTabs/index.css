@@ -1,0 +1,66 @@
+.LeaderboardTabs .ant-tabs-tab-btn {
+  font-size: 28px;
+}
+
+.LeaderboardTabs .ant-tabs-ink-bar {
+  border-radius: 30px;
+}
+
+.LeaderboardTabs .ant-tabs-card .ant-tabs-tab {
+  background: transparent !important;
+  border: 0;
+  outline: none;
+  border-radius: 30px !important;
+  padding: 4px 20px;
+}
+
+.LeaderboardTabs .ant-tabs-card .ant-tabs-tab-active {
+  background: var(--secondary-color) !important;
+}
+
+.LeaderboardTabs .ant-tabs-card .ant-tabs-tab-btn {
+  font-size: 22px;
+}
+
+.LeaderboardTabs .ant-tabs-card .ant-tabs-nav-list {
+  max-width: max-content !important;
+  margin: auto;
+}
+
+.LeaderboardTabs .ant-tabs-card .ant-tabs-nav:before {
+  display: none;
+}
+
+.LeaderboardTabs .ant-tabs-content-holder {
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 991px) {
+  .LeaderboardTabs .ant-tabs-tab-btn {
+    font-size: 20px;
+  }
+  .LeaderboardTabs .ant-tabs-card .ant-tabs-tab-btn {
+    font-size: 16px;
+  }
+  .LeaderboardTabs .ant-tabs-card .ant-tabs-tab {
+    padding: 4px 12px;
+  }
+  .LeaderboardTabs .ant-tabs-content-holder {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 475px) {
+  .LeaderboardTabs .ant-tabs-tab-btn {
+    font-size: 14px;
+  }
+  .LeaderboardTabs .ant-tabs-card .ant-tabs-tab-btn {
+    font-size: 12px;
+  }
+  .LeaderboardTabs .ant-tabs-card .ant-tabs-tab {
+    padding: 4px 4px;
+  }
+  .LeaderboardTabs .ant-tabs-card .ant-tabs-nav-list {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+}

@@ -1,0 +1,75 @@
+@import "../../app/globals.css";
+
+.btn-main {
+  border: 0;
+  outline: none;
+  max-width: max-content;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 6px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.btn-main:before {
+  content: "";
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  background-color: var(--primary-color);
+  z-index: 0;
+  border-radius: 6px;
+  transition: 0.3s cubic-bezier(0.42, 0, 0.32, 1.29);
+}
+
+.btn-main:hover:before {
+  width: calc(100% - 10px);
+}
+
+.btn__text {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: var(--primary-color);
+  font-family: var(--poppins-font);
+  position: relative;
+  z-index: 1;
+  padding-left: 8px;
+}
+
+.btn-main:hover .btn__text {
+  color: #fff;
+}
+
+.btn__icon {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-mint {
+  background-color: #32c741 !important;
+}
+
+@media (max-width: 1199px) {
+  .btn__text {
+    font-size: 13px;
+  }
+  .btn-main:before {
+    width: 40px;
+    height: 40px;
+  }
+  .btn__icon {
+    width: 39px;
+    height: 39px;
+  }
+}

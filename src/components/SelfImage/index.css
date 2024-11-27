@@ -1,0 +1,13 @@
+.img__wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.img__wrapper img {
+    position: relative !important;
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    border-radius: 20px;
+}

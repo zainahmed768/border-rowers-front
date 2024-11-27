@@ -1,0 +1,54 @@
+@import "../../../../../app/globals.css";
+
+.about__card {
+  margin: 15px 0;
+  text-align: center;
+  background: #edf5ff;
+  border-radius: 18px;
+  transition: 0.3s ease;
+  max-width: 300px;
+  height: 95%;
+}
+
+.card__1:hover,
+.card__4:hover {
+  background: var(--secondary-color) !important;
+  transform: translateY(-8px);
+}
+.card__2:hover,
+.card__3:hover {
+  background: var(--primary-color) !important;
+  transform: translateY(-8px);
+}
+.card__2:hover h4,
+.card__2:hover h3,
+.card__3:hover h4,
+.card__3:hover h3 {
+  color: var(--white) !important;
+}
+.about__card h4,
+.about__card h3 {
+  color: var(--primary-color) !important;
+}
+
+.about__card h4 {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  margin-top: 10px !important;
+  transition: 0.4s ease;
+}
+
+.about__card h3 {
+  font-size: 23px !important;
+  font-weight: 800 !important;
+  margin-top: 0 !important;
+  transition: 0.4s ease;
+  font-family: var(--score-font) !important;
+}
+
+@media (max-width: 991px) {
+  .about__card {
+    max-width: 100%;
+    width: 100%;
+  }
+}

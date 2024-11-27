@@ -1,0 +1,31 @@
+.ant-select {
+  height: 48px !important;
+}
+.ant-select-selector {
+  border-color: #c6c6c6 !important;
+  height: 48px !important;
+  background-color: transparent !important;
+  color: var(--primary-color) !important;
+
+  font-family: var(--poppins-font) !important;
+  color: #0521486e !important;
+}
+
+.ant-select-selection-item {
+  line-height: 48px !important;
+  /* color: var(--primary-color) !important; */
+}
+
+.ant-select-selector input {
+  
+  /* color: #0521486e !important; */
+  padding: 14px 10px !important;
+  font-weight: 500 !important;
+}
+
+.ant-select-selector:hover {
+  border-color: var(--primary-color) !important;
+}
+.ant-select-selector:focus {
+  box-shadow: 0 0 5px #05214871 !important;
+}

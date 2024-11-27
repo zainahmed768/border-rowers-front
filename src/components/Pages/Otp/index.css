@@ -1,0 +1,12 @@
+.otp__wrapp form > div {
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.otp__input {
+  border: 1px solid #c6c6c6;
+  transition: 0.4s ease;
+  border-radius: 8px;
+  width: 100% !important;
+  padding: 20px 10px !important;
+}

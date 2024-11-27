@@ -1,0 +1,94 @@
+.my__team .ant-tabs-content-holder {
+  margin-top: 1.5rem;
+}
+
+.team__card-single {
+  background: #fff;
+  border-radius: 26px;
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.member__img {
+  flex: 0 0 33%;
+  position: relative;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  border-radius: 50%;
+}
+
+.members__info {
+  flex: 0 0 67%;
+  text-align: center;
+}
+
+.captian__badge {
+  position: absolute;
+  bottom: 10px;
+  right: -6px;
+}
+
+.members__info p,
+.members__info h2,
+.members__info h3 {
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.isCaptian {
+  font-size: 12px;
+}
+
+.member__name {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.member__score {
+  font-size: 14px;
+  font-weight: 800;
+  font-family: var(--score-font) !important ;
+}
+
+.team__card-single:hover {
+  background: var(--secondary-color);
+}
+
+.users__table .member__name {
+  font-size: 14px;
+}
+
+/* As Captian  */
+.team_as_captian {
+  gap: 5px;
+}
+
+.team_as_captian .members__info {
+  flex: 0 0 45%;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.team_as_captian button {
+  flex: 0 0 35%;
+  width: 100%;
+  max-width: 100px;
+  text-align: center;
+  padding: 0 !important;
+}
+/* As Captian  */
+
+@media (max-width: 575px) {
+  .team__card-single {
+    flex-direction: column;
+    align-items: center;
+  }
+  .team_as_captian:not(.bg-secondary) .members__info {
+    text-align: center !important;
+  }
+}

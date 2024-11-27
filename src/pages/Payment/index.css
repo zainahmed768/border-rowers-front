@@ -1,0 +1,37 @@
+.payment button {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 18px;
+    border-radius: 8px;
+    background: var(--secondary-color);
+    font-family: var(--syne-font);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.payment button:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.paymentHead {
+    background: #F0F2F9;
+    padding: 1rem 2em;
+    border-radius: 14px;
+    margin: 0 auto 2rem;
+}
+
+.payment {
+    max-width: 1000px;
+    padding: 4rem 0;
+    margin: auto;
+}
+
+@media(max-width:575px) {
+    .payment {
+        padding: 2rem 0;
+    }
+}

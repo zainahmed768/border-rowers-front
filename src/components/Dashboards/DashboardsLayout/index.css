@@ -1,0 +1,153 @@
+.admin__wrapp {
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.admin__wrapp main.ant-layout-content {
+  background: #edf5ff;
+  border-radius: 22px !important;
+  overflow: auto;
+  padding: 3rem 2rem;
+  /* height: 790px; */
+}
+
+.admin__wrapp main.ant-layout-content::-webkit-scrollbar {
+  width: 10px;
+}
+.admin__wrapp main.ant-layout-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.admin__wrapp main.ant-layout-content::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background-color: var(--primary-color);
+  min-height: 50px;
+}
+
+.admin__wrapp section.ant-layout.ant-layout-has-sider {
+  background: transparent;
+  gap: 20px;
+  /* align-items: flex-end; */
+}
+.admin__wrapp aside.ant-layout-sider {
+  max-width: 400px !important;
+  width: 400px !important;
+  flex: 0 0 400px !important;
+  min-width: 200px !important;
+  border-radius: 28px;
+  padding: 2rem;
+  background: var(--primary-color) !important;
+  margin-top: 54px;
+  height: 100% !important;
+  position: sticky;
+  top: 60px;
+}
+
+.admin__wrapp aside.ant-layout-sider .ant-list-item {
+  align-items: center !important;
+}
+
+.admin__wrapp aside.ant-layout-sider .ant-list-item a {
+  font-family: var(--syne-font);
+  color: #ffffffc4 !important;
+  font-size: 18px;
+}
+
+.admin__wrapp .ant-list-item-meta {
+  align-items: center;
+}
+
+.admin__wrapp .ant-list-item-meta-title {
+  margin: 0 !important;
+}
+
+.admin__wrapp aside.ant-layout-sider .ant-list-item a:hover {
+  color: #fff !important;
+}
+
+.admin__wrapp .ant-list-item {
+  border-bottom: 1px solid #dddddd38 !important;
+}
+.admin__wrapp .ant-list-item:last-child {
+  border-bottom: 0 !important;
+}
+.admin__wrapp .ant-list-item-meta {
+  padding-top: 5px;
+}
+
+.admin__wrapp .ant-upload-list:not(.file__upload .ant-upload-list) {
+  text-align: center;
+}
+
+.admin__wrapp .ant-upload-list-item {
+  border: 6px solid #fff !important;
+  padding: 0 !important;
+}
+
+.admin__wrapp .ant-upload-list-item:before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.admin__wrapp .ant-upload-list-item-container,
+.admin__wrapp .ant-upload.ant-upload-select {
+  margin-top: -90px !important;
+  width: 150px !important;
+  height: 150px !important;
+}
+.admin__wrapp .admin__wrapp .ant-tooltip {
+  display: none;
+}
+
+.logout__txt {
+  font-family: var(--syne-font);
+  color: #ffffffc4 !important;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.logout__handle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #dddddd36;
+  padding-top: 14px;
+  cursor: pointer;
+}
+
+.___wrapp {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+@media (max-width: 1280px) {
+  .admin__wrapp aside.ant-layout-sider {
+    max-width: 300px !important;
+    width: 100% !important;
+    flex: 0 0 300px !important;
+    padding: 1.2rem;
+  }
+}
+@media (max-width: 991px) {
+  .admin__wrapp aside.ant-layout-sider {
+    position: unset;
+    top: unset;
+}
+  .admin__wrapp section.ant-layout.ant-layout-has-sider {
+    flex-direction: column;
+    align-items: center;
+  }
+  .admin__wrapp main.ant-layout-content {
+    width: 100% !important;
+    padding: 1.5rem;
+  }
+}
+@media (max-width: 767px) {
+  .admin__wrapp aside.ant-layout-sider .ant-list-item a {
+    font-size: 15px;
+  }
+  .admin__wrapp main.ant-layout-content {
+    padding: 0.8rem;
+  }
+}

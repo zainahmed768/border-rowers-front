@@ -1,0 +1,341 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+@import "../styles/grid.css";
+
+@font-face {
+  font-family: "Akira Expanded";
+  src: url("../../public/fonts/AkiraExpanded.otf");
+  font-display: swap;
+}
+
+:root {
+  --primary-color: #052148;
+  --secondary-color: #f6cd3b;
+  --third-color: #193a69;
+  --white: #fff;
+  --score-font: "Akira Expanded", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--syne-font) !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  font-family: var(--poppins-font);
+}
+
+/* Fonts Sizes & Weights  */
+.big {
+  font-size: 3.4em !important;
+  margin-top: 0 !important;
+}
+.standard {
+  font-size: 2.5em !important;
+}
+.medium {
+  font-size: 1.5625em !important;
+}
+.normal {
+  font-size: 1.125em !important;
+}
+.small {
+  font-size: 14px !important;
+}
+.w-bold {
+  font-weight: 700 !important;
+}
+.w-semib {
+  font-weight: 600 !important;
+}
+.w-med {
+  font-weight: 500;
+}
+.w-reg {
+  font-weight: 400 !important;
+}
+
+/* Fonts Sizes & Weights  */
+
+/* Text & Bg colors  */
+.bg-white {
+  background-color: var(--white) !important;
+}
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+.bg-secondary {
+  background-color: var(--secondary-color) !important;
+}
+.text-primary {
+  color: var(--primary-color) !important;
+}
+.text-secondary {
+  color: var(--secondary-color) !important;
+}
+.text-white {
+  color: var(--white) !important;
+}
+.text-black {
+  color: #000;
+}
+.text-third {
+  color: var(--third-color) !important;
+}
+/* Text & Bg colors  */
+
+/* Antd  */
+.ant-form-item {
+  margin-bottom: 17px !important;
+}
+.ant-tabs-nav-operations {
+  display: none !important;
+}
+
+.ant-tabs-nav-list {
+  width: 100% !important;
+}
+
+.ant-tabs-nav-list .ant-tabs-tab {
+  width: 100% !important;
+  background: transparent;
+  border: 0;
+}
+
+.ant-tabs-tab-btn {
+  margin: 0 auto !important;
+}
+
+.ant-tabs-ink-bar {
+  height: 6px !important;
+  background: var(--secondary-color) !important;
+}
+
+.ant-tabs-tab-btn {
+  font-family: var(--syne-font);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.ant-tabs-tab .ant-tabs-tab-btn {
+  color: #05214885 !important;
+}
+.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--primary-color) !important;
+}
+
+.ant-tooltip-inner,
+.ant-tooltip-arrow,
+.ant-tooltip {
+  display: none;
+}
+
+.ant-modal-mask {
+  backdrop-filter: blur(10px);
+}
+.ant-form-item-explain-error {
+  margin: 0 0 10px !important;
+  font-size: 14px !important;
+}
+.error-message {
+  color: rgb(248, 36, 36) !important;
+  font-size: 14px;
+  margin-top: -15px;
+  text-align: left;
+}
+.ant-spin-dot-item:not(
+    .pre__loading .ant-spin-dot-item,
+    .leaderboard__modal .ant-spin-dot-item
+  ) {
+  background: #fff !important;
+}
+/* .ant-spin-dot-item {
+  background: #fff !important;
+} */
+.card-elem {
+  border: 1px solid #c6c6c6 !important;
+  border-radius: 6px;
+  padding: 16px 10px;
+}
+.admin__wrapp .ant-layout {
+  background: transparent !important;
+  gap: 20px;
+}
+
+.general__btn {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+:where(.css-dev-only-do-not-override-17sses9).ant-notification
+  .ant-notification-notice-wrapper
+  .ant-notification-notice {
+  padding: 16px 13px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Not found  */
+.not__found {
+  position: relative;
+}
+
+.not__found:before {
+  content: "404";
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 340px;
+  opacity: 0.1;
+}
+/* Not found  */
+
+/* Legal  */
+.legal-content {
+  padding: 4rem 0;
+}
+/* Legal  */
+
+.cancle__btn {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #c73232;
+  color: var(--white);
+  font-family: var(--syne-font);
+  font-size: 16px;
+  font-weight: 700;
+  height: 55px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.cancle__btn:hover {
+  background: var(--secondary-color);
+}
+@media (max-width: 1150px) {
+  .big {
+    font-size: 2.875em !important;
+  }
+
+  .standard {
+    font-size: 2em !important;
+  }
+
+  .medium {
+    font-size: 1.375em !important;
+  }
+
+  .normal {
+    font-size: 1em !important;
+  }
+}
+@media (max-width: 991px) {
+  .big {
+    font-size: 2.5em !important;
+  }
+
+  .standard {
+    font-size: 1.75em !important;
+  }
+
+  .medium {
+    font-size: 1.25em !important;
+  }
+
+  .normal {
+    font-size: 0.9375em !important;
+  }
+  .admin__wrapp .ant-layout {
+    flex-direction: column !important;
+    align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .big {
+    font-size: 1.875em !important;
+  }
+
+  .standard {
+    font-size: 1.375em !important;
+  }
+
+  .medium {
+    font-size: 1.125em !important;
+  }
+
+  .normal {
+    font-size: 0.875em !important;
+  }
+
+  .not__found {
+    text-align: center;
+  }
+  .not__found:before {
+    font-size: 240px;
+  }
+
+  /* Antd  */
+  .ant-tabs-tab-btn {
+    font-size: 12px;
+  }
+  /* Antd  */
+
+  /* legal */
+  .legal-content {
+    padding: 2rem 0;
+  }
+  /* legal */
+}
+
+@media (max-width: 680px) {
+  .not__found:before {
+    font-size: 140px;
+  }
+}
+@media (max-width: 575px) {
+  .not__found:before {
+    font-size: 100px;
+  }
+}
+
+/* for modal of leaderboard  */
+.leaderboard__modal-head {
+  max-width: max-content;
+  margin: -50px auto 0;
+  text-align: center;
+}
+
+.leaderboard__modal-body {
+  background: #edf5ff;
+  padding: 16px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+/* for modal of leaderboard  */

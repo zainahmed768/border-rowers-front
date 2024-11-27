@@ -1,0 +1,10 @@
+@media (max-width: 991px) {
+  .winnerCard__wrapp {
+    margin-top: 8rem;
+  }
+}
+@media (max-width: 767px) {
+  .winnerCard__wrapp {
+    margin-top: 4rem;
+  }
+}

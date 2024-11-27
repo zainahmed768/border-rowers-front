@@ -1,0 +1,43 @@
+@import "../../../../app/globals.css";
+
+.section.participate {
+  padding: 2rem 1rem;
+}
+
+.participate {
+  border: 5px solid var(--secondary-color);
+  max-width: max-content;
+  margin: 4rem auto;
+  border-radius: 88px;
+}
+
+.participate__text-wrapp {
+  padding-right: 8em;
+}
+
+.participate__img {
+  max-width: 92%;
+  position: relative;
+}
+
+.participate__img img {
+  width: 100% !important;
+  height: 100% !important;
+  position: relative !important;
+  object-fit: contain;
+}
+
+@media (max-width: 800px) {
+  .participate {
+    border-radius: 18px !important;
+  }
+}
+@media (max-width: 767px) {
+  .participate__text-wrapp {
+    padding-right: 0em;
+    margin-top: 0rem;
+  }
+  .section.participate {
+    padding: 1rem 0.5rem;
+  }
+}
