@@ -2,6 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { baseURL } from "../../network/baseUrl";
 import {
   AUTH,
+  DELETE_ACCOUNT,
   EDIT_ORG,
   EDIT_PROFILE,
   FORGOT_PASSWORD,
@@ -14,6 +15,7 @@ import {
   UPDATE_IMAGE,
   USER_REGISTERATION,
   VERIFY_OTP,
+  VERIFY_OTP_DELETE_ACCOUNT,
 } from "../../network/endpoints";
 
 export const authApi = createApi({
@@ -115,6 +117,13 @@ export const authApi = createApi({
         },
       }),
     }),
+    verifyOtpDeleteAccount: builder.mutation({
+      query: (otpInput) => ({
+        url: VERIFY_OTP_DELETE_ACCOUNT,
+        method: "POST",
+        body: otpInput,
+      }),
+    }),
     updatePassword: builder.mutation({
       query: (passInputs) => ({
         url: AUTH + RESET_PASSWORD,
@@ -168,6 +177,13 @@ export const authApi = createApi({
       }),
       invalidatesTags: ["updateUser"],
     }),
+    deleteAccount: builder.mutation({
+      query: (id) => ({
+        url: `${DELETE_ACCOUNT}?id=${id}`,
+        method: "get",
+      }),
+      invalidatesTags: ["updateUser"],
+    }),
   }),
 });
 
@@ -185,5 +201,7 @@ export const {
   useForgotPasswordResetMutation,
   useLogoutMutation,
   useEditOrgMutation,
+  useDeleteAccountMutation,
+  useVerifyOtpDeleteAccountMutation
 } = authApi;
 export default authApi;

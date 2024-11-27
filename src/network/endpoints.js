@@ -12,6 +12,8 @@ export const USER_REGISTERATION = "/user/register";
 export const ORG_REGISTERATION = "/organization/register";
 export const GET_PROFILE = "/profile";
 export const UPDATE_IMAGE = "/profile/update-image";
+export const DELETE_ACCOUNT = "/profile/delete-account";
+export const VERIFY_OTP_DELETE_ACCOUNT = "profile/verify-otp-delete-account";
 
 // Content
 export const HOME = "/content/home";
