@@ -1,3 +1,4 @@
+"use client";
 import { Col, Form, Row, Spin, notification } from "antd";
 import React, { useEffect, useState } from "react";
 import InputField from "../InputField/InputField";
