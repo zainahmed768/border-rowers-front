@@ -11,9 +11,14 @@ import { useDispatch } from "react-redux";
 import { setUser } from "../../features/reducers/AuthReducer";
 import { setCookie } from "cookies-next";
 import { capitalizeWords } from "../../utils/utils";
+import axios from "axios";
 
 const LoginForm = ({ data, isLoading, isSuccess, error, method }) => {
   const dispatch = useDispatch();
+  // const [user, setUser] = useState({
+  //   email: "",
+  //   password: "",
+  // });
   const [rememberMe, setRememberMe] = useState(false);
   const [form] = Form.useForm();
   // Toaster
@@ -33,6 +38,8 @@ const LoginForm = ({ data, isLoading, isSuccess, error, method }) => {
 
   // On Form Submit
   const onFinish = async (values) => {
+    console.log(values, "sdhcbs");
+
     try {
       await method(values);
 
@@ -47,7 +54,7 @@ const LoginForm = ({ data, isLoading, isSuccess, error, method }) => {
         );
       }
     } catch (error) {
-      console.log('error')
+      console.log("error");
       api.error({
         message: `Notification`,
         description: (
@@ -58,7 +65,19 @@ const LoginForm = ({ data, isLoading, isSuccess, error, method }) => {
       });
     }
   };
-
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   axios({
+  //     method: "post",
+  //     url: "https://admin.borderrowers.com/api/v1/user/auth/login?type=user-login",
+  //     data: {
+  //       email: user?.email,
+  //       password: user?.password,
+  //     },
+  //   }).then(function (response) {
+  //     console.log(response, "all res");
+  //   });
+  // };
   // If Success
   useEffect(() => {
     if (isSuccess) {
@@ -90,7 +109,7 @@ const LoginForm = ({ data, isLoading, isSuccess, error, method }) => {
       //     router.push("/organization");
       //   }, 1500);
       // }
-
+      console.log(data, "response login", data?.response?.data?.token);
       dispatch(
         setUser({
           token: data?.response?.data?.token,
@@ -101,7 +120,7 @@ const LoginForm = ({ data, isLoading, isSuccess, error, method }) => {
       setCookie("token", data?.response?.data?.token);
       setCookie("role", data?.response?.data?.user?.role);
     }
-  }, [isSuccess]);
+  }, [isSuccess, data]);
 
   // If Error
   useEffect(() => {
@@ -141,6 +160,18 @@ const LoginForm = ({ data, isLoading, isSuccess, error, method }) => {
   return (
     <>
       {contextHolder}
+      {/* <input
+        type="email"
+        value={user?.email}
+        onChange={(e) => setUser({ ...user, email: e.target.value })}
+      />
+      <input
+        type="password"
+        value={user?.password}
+        onChange={(e) => setUser({ ...user, password: e.target.value })}
+      />
+      <button className="btn btn-primary" onClick={handleSubmit}>submit</button>
+      */}
       <Form
         name={"login-form"}
         onFinish={onFinish}
